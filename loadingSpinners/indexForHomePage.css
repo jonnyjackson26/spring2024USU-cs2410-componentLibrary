@@ -1,0 +1,56 @@
+
+.circle {
+    width:50px;
+    height:50px;
+    background-color: chartreuse;
+    border-radius: 50%;
+    border:none;
+    margin:20px;
+}
+#container-one {
+    display:flex;
+    flex-direction: row;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+#circle-one {
+    animation: bounce 3s ease 0s infinite;
+}
+#circle-two {
+    animation: bounce 3s ease .5s infinite;
+}
+#circle-three {
+    animation: bounce 3s ease 1s infinite;
+}
+
+/* loading text */
+
+.loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: bounceOpacity 1.5s ease infinite;
+}
+
+@keyframes bounceOpacity {
+    0%, 20%, 50%, 80%, 100% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}

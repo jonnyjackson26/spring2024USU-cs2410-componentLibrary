@@ -1,0 +1,47 @@
+.myNavBar {
+    display:flex;
+    flex-direction: row;
+    align-items: center; 
+    background-color: royalblue;
+    border-bottom: 1px solid gray;
+    z-index: 1000; /*on top of everything*/
+}
+.menu-icon {
+    margin-right: 10px; 
+    margin-left:10px;
+    color:white;
+}
+.myNavBar > a {
+    color:white;
+    text-decoration: none;
+    transition:all .3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.myNavBar > a:hover {
+    color:lightskyblue;
+    cursor: pointer;
+}
+.myNavBar > ul > li {
+    display: inline;
+    margin-right: 10px;
+    margin-left:10px;
+}
+.myNavBar > ul > li > a {
+    color:white;
+    text-decoration: none;
+    transition:all .3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.myNavBar > ul > li > a:hover {
+    color:lightskyblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+.myNavBar > ul {
+    margin-left: auto;
+}
+#firstHeader {
+    margin-top: 60px;
+}

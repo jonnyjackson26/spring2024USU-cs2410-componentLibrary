@@ -1,0 +1,55 @@
+.myDrawer {
+    border:1px solid black;
+}
+
+.myNavBar {
+    display:flex;
+    flex-direction: row;
+    align-items: center; 
+    background-color: royalblue;
+    border-bottom: 1px solid gray;
+    width:100%;
+    z-index: 1000; /*on top of everything*/
+}
+
+.menu-icon {
+    margin-right: 10px; 
+    margin-left:10px;
+    color:white;
+}
+.menu-icon:hover {
+    margin-right: 10px; 
+    margin-left:10px;
+    color:lightblue;
+}
+
+.popup {
+    background-color: cornflowerblue;
+    border-right:1px solid gray;
+    padding:10px;
+    transition: opacity .3s ease;
+    opacity:0;
+    width:20%;
+    z-index: 1000; /*on top of everything*/
+}
+.showing {
+    opacity:1;
+}
+.popup > ul > li > a {
+    color:white;
+    text-decoration: none;
+    transition:all .3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.popup > ul {
+    list-style-type:none;
+}
+.popup > ul > li {
+    margin-top:20px;
+}
+.popup > ul > li > a:hover {
+    color:lightblue;
+    cursor: pointer;
+    text-decoration: none;
+}
